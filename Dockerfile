@@ -3,15 +3,6 @@ FROM ubuntu:14.04
 
 MAINTAINER Ron Kurr <kurr@kurron.org>
 
-# fetch the latest software updates
-RUN apt-get --quiet update
-
-# apply the latest software updates
-RUN apt-get --quiet --yes dist-upgrade 
-
-# install the wget tool
-RUN apt-get --quiet --yes install wget 
-
 # import the WebUpd8 public key
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv EEA14886
 
